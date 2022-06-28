@@ -76,7 +76,72 @@ void loop()
 
   if (key != 0xff)
   {
-    Serial.println(key, HEX);
+    switch(key)
+    {
+      case 0x1E:
+        Serial.println("1");
+        break;
+
+      case 0x2E:
+        Serial.println("2");
+        break;
+      
+      case 0x4E:
+        Serial.println("3");
+        break;
+      
+      case 0x8E:
+        Serial.println("A");
+        break;
+
+      case 0x1D:
+        Serial.println("4");
+        break;
+
+      case 0x2D:
+        Serial.println("5");
+        break;
+      
+      case 0x4D:
+        Serial.println("6");
+        break;
+      
+      case 0x8D:
+        Serial.println("B");
+        break;
+
+      case 0x1B:
+        Serial.println("7");
+        break;
+
+      case 0x2B:
+        Serial.println("8");
+        break;
+      
+      case 0x4B:
+        Serial.println("9");
+        break;
+      
+      case 0x8B:
+        Serial.println("C");
+        break;
+
+      case 0x17:
+        Serial.println("*");
+        break;
+
+      case 0x27:
+        Serial.println("0");
+        break;
+      
+      case 0x47:
+        Serial.println("#");
+        break;
+      
+      case 0x87:
+        Serial.println("D");
+        break;
+    }
 
   }
 
